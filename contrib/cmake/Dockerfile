@@ -1,7 +1,7 @@
 # !IMPORTANT!
 # * Pass -m 2GB (or more) when building the image.
 # * Configure Docker to use disks larger than the default 20 GB.
-FROM cirrusci/windowsservercore:2019
+FROM k0ekk0ek/windowsservercore:2019
 
 RUN powershell -NoLogo -NoProfile -Command \
     choco feature disable -n=usePackageExitCodes ; \
